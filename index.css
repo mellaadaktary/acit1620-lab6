@@ -44,3 +44,118 @@
         On screens wider than 800px, the <p> element inside the div must additionally have no top margin
 
 */
+
+
+@media screen and (max-width:800px){
+   
+footer > a > div{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    
+    
+}
+
+
+}
+
+
+
+@media screen and (min-width:800px) {
+
+    Footer > a > div{
+        display: flex;
+        flex-direction: row;
+        margin-top: 0;
+        padding: 4em;
+        justify-content: space-between;
+
+
+
+    }
+    
+
+    
+
+    header{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+
+   }
+
+   header > div{
+    display: grid;
+    grid-template-rows: max-content;
+    grid-template-columns: auto;
+
+
+   }
+.bg-pink div{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2em;
+}
+
+
+section > h2{
+    font-size: 6em;
+}
+
+#grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 250px 250px 250px 250px;
+    
+
+
+}
+
+#grid > *{
+    padding: 1em;
+
+
+
+}
+
+section >h2{
+    grid-column: span 3;
+    text-align: right;
+    font-size: 6em;
+
+}
+
+#grid p:first-of-type{
+
+    grid-column: span 2;
+}
+
+section > div{
+    grid-column: 2 / span 2;
+    grid-row: 3 / span 3;
+}
+
+
+
+
+
+
+
+
+
+}
+
+#flexbox{
+display: flex;
+flex-direction: column;
+
+}
+
+#canvas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
